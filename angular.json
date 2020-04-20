@@ -21,8 +21,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "manifest.yml",
-              "Staticfile.txt"
+              "src/manifest.yml",
+              "src/Staticfile.txt"
             ],
             "styles": [
               "src/styles.css"
