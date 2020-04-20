@@ -1,13 +1,20 @@
 <div class="container">
-  <div class="row mb-3" *ngFor="let interaction of interactions">
-    <div class="col-1 themed-grid-col jumbotron">
-      {{interaction.eventId}}
-    </div>
-    <div class="col-3 themed-grid-col">
-      {{interaction.email}}
-    </div>
-    <div class="col-3 themed-grid-col">
-      {{interaction.deviceId}}
-    </div>
+  <div class="table-responsive">
+    <table class="table table-striped table-sm">
+      <thead>
+        <tr>
+          <th>EventId</th>
+          <th>Email</th>
+          <th>DeviceId</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let interaction of interactions">
+          <td>{{interaction.eventId}}</td>
+          <td>{{interaction.email}}</td>
+          <td>{{interaction.deviceId}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
